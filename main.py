@@ -8,8 +8,8 @@ virtual_root = "Root"  # 根目录名称
 def print_directory_tree(startpath, output_file):
     with open(output_file, 'w') as f:
         # 打印和写入虚拟根目录名称
-        print(f'{virtual_root}/')
-        f.write(f'{virtual_root}/\n')
+        print(f'/{virtual_root}')
+        f.write(f'/{virtual_root}\n')
 
         # 捕获和存储整个目录结构
         paths = {}
@@ -31,7 +31,7 @@ def print_directory_tree(startpath, output_file):
             indent = '    ' * depth + '|-- '
 
             for dir in dirs:
-                dir_line = f"{indent}{dir}/"
+                dir_line = f"{indent}/{dir}"
                 print(dir_line)
                 f.write(dir_line + '\n')
                 print_tree(os.path.join(current_path, dir), depth + 1)
