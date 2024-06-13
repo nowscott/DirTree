@@ -33,7 +33,6 @@
 假设你有如下目录结构：
 ```
 project/
-    ├── .git/
     ├── .env
     ├── src/
     │   ├── main.py
