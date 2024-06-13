@@ -1,9 +1,19 @@
 import os
 
 # 配置项
-ignore_files = ['.env', 'tree.py', 'directory_tree.txt', '.DS_Store', '.env.local']  # 忽略的文件
-ignore_dirs = ['.git', '__pycache__', 'node_modules', '.next']  # 忽略的文件夹
-virtual_root = "Root"  # 根目录名称
+# 忽略的文件
+ignore_files = ['.env', 
+                'main.py', 
+                'directory_tree.txt', 
+                '.DS_Store', 
+                '.env.local']  
+# 忽略的文件夹
+ignore_dirs = ['.git', 
+               '__pycache__', 
+               'node_modules', 
+               '.next']  
+# 根目录名称
+virtual_root = "DirTree"  
 
 def print_directory_tree(startpath, output_file):
     with open(output_file, 'w') as f:

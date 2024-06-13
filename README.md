@@ -18,8 +18,8 @@
 ## 使用方法
 1. 克隆仓库到本地：
     ```sh
-    git clone https://github.com/nowscott/dir_tree.git
-    cd dir_tree
+    git clone https://github.com/nowscott/DirTree.git
+    cd DirTree
     ```
 
 2. 运行脚本：
@@ -44,8 +44,8 @@ project/
 
 运行脚本后，生成的 `directory_tree.txt` 文件内容如下：
 ```
-Root/
-|-- src/
+/Root
+|-- /src
 |   |-- main.py
 |   |-- utils.py
 |-- README.md

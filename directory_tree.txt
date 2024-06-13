@@ -1,0 +1,4 @@
+/DirTree
+|-- .gitignore
+|-- LICENSE
+|-- README.md
